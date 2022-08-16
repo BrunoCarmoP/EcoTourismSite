@@ -1,0 +1,201 @@
+body{
+    background-color: #fef6d9;
+    background-image: url(./img/fundo.png);
+
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+}
+#menu{
+    color: #631b15;
+    text-align: right;
+    margin-top: -50px;
+    
+}
+
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10;
+    position: absolute; 
+}
+#menu li {
+    display: inline-block;
+    margin-left: 40px;
+    font-family: 'Dosis', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 33px;
+    text-transform: uppercase;
+
+
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #070F18;
+}
+a{
+    color: #631b15;
+    text-decoration: none;
+
+}
+
+.container {
+    margin: 90px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+#headerCentral{
+    margin-left: 50%;
+    margin-top: -150px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    /* color: #000000; */
+    line-height: 0px;
+}
+#headerCentral h1{
+    font-family: 'Gochi Hand', cursive;
+    text-align: center;
+    font-size: 210px;
+    color: #3d913a;
+    margin-right: -90px;
+    padding-top: 10px;
+
+}
+
+
+#headerCentral h2{
+    font-family: 'Gochi Hand', cursive;
+    text-align: center;
+    font-size: 120px;
+    color: #3d913a;
+    margin-right: -90px;
+    margin-top: -41px;
+}
+p.lorem{
+    margin-top: -20px;
+    margin-left: 200px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #631b15;
+
+}
+#headerCentral h3{
+
+    margin-top: -20px;
+    margin-left: 200px;
+    font-size: 20px;
+}
+#bookNow{
+    text-decoration-line: underline;
+    text-decoration-color:#3d913a;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 3px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    
+
+}
+
+#bookNow i{
+    color: #3d913a;
+}
+
+#header{
+    margin-top: -40px;
+}
+
+.imagemCentral{
+    background-image: url(./img/imagemCentral.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    height: 446%;
+    margin-left: -690px;
+    margin-top: -532px;
+}
+@media(min-width: 498px){
+
+}
+#header{
+    width: 10%;
+    height: 20%;
+    margin-top: -60px;
+}
+
+
+
+
+
+
+
+
+  /* ini: Preloader */
+ 
+  #preloader {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#1bb327; /* cor do background que vai ocupar o body */
+    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+}
+#preloader .inner {
+    position: absolute;
+    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+.bolas > div {
+  display: inline-block;
+  background-color: #fff;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  margin: 3px;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: animarBola;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+   
+}
+.bolas > div:nth-child(1) {
+    animation-duration:0.75s ;
+    animation-delay: 0;
+}
+.bolas > div:nth-child(2) {
+    animation-duration: 0.75s ;
+    animation-delay: 0.12s;
+}
+.bolas > div:nth-child(3) {
+    animation-duration: 0.75s  ;
+    animation-delay: 0.24s;
+}
+ 
+@keyframes animarBola {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+  16% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: 0.7;
+  }
+  33% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; 
+  } 
+}
+/* end: Preloader */
